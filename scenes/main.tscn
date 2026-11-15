@@ -1,0 +1,51 @@
+[gd_scene format=3 uid="uid://2odafqy1r7xd"]
+
+[ext_resource type="Script" uid="uid://c2y2vtctl6ikq" path="res://scripts/main.gd" id="1"]
+[ext_resource type="PackedScene" path="res://scenes/background.tscn" id="2"]
+[ext_resource type="PackedScene" path="res://scenes/platform.tscn" id="3"]
+[ext_resource type="PackedScene" path="res://scenes/player.tscn" id="4"]
+[ext_resource type="PackedScene" path="res://scenes/hud.tscn" id="5"]
+[ext_resource type="AudioStream" uid="uid://jyr4a5tl2a3f" path="res://assets/bmo-always-bounces-back-made-with-Voicemod.mp3" id="6_tefeu"]
+
+[node name="Main" type="Node2D" unique_id=1759611937]
+script = ExtResource("1")
+
+[node name="Background" parent="." unique_id=1904984289 instance=ExtResource("2")]
+
+[node name="Platforms" type="Node2D" parent="." unique_id=620789403]
+
+[node name="Ground" parent="Platforms" unique_id=1775845515 instance=ExtResource("3")]
+position = Vector2(0, 246)
+size = Vector2(480, 24)
+one_way = false
+body_color = Color(0.227, 0.255, 0.502, 1)
+
+[node name="Platform1" parent="Platforms" unique_id=1393842754 instance=ExtResource("3")]
+position = Vector2(50, 190)
+
+[node name="Platform2" parent="Platforms" unique_id=2042675122 instance=ExtResource("3")]
+position = Vector2(185, 145)
+
+[node name="Platform3" parent="Platforms" unique_id=353808590 instance=ExtResource("3")]
+position = Vector2(320, 190)
+
+[node name="Platform4" parent="Platforms" unique_id=442771414 instance=ExtResource("3")]
+position = Vector2(60, 100)
+size = Vector2(90, 8)
+
+[node name="Platform5" parent="Platforms" unique_id=1315063487 instance=ExtResource("3")]
+position = Vector2(340, 100)
+size = Vector2(90, 8)
+
+[node name="Items" type="Node2D" parent="." unique_id=2112267806]
+
+[node name="Foes" type="Node2D" parent="." unique_id=691825760]
+
+[node name="Player" parent="." unique_id=222969980 instance=ExtResource("4")]
+position = Vector2(240, 230)
+
+[node name="HUD" parent="." unique_id=517741762 instance=ExtResource("5")]
+
+[node name="music" type="AudioStreamPlayer2D" parent="." unique_id=2039052126]
+stream = ExtResource("6_tefeu")
+autoplay = true
