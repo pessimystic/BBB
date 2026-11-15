@@ -1,6 +1,4 @@
-# Low Battery (Godot 4.2+)
 
-Open `project.godot` in Godot, then press F5.
 Move: arrows / A D. Jump: Space / Up / W. Press any key to start.
 
 ## Scene tree (scenes/main.tscn)
@@ -24,3 +22,4 @@ spark.gd, platform_body.gd, background.gd, hud.gd, sheet_frames.gd (builds anima
 
 ## Tuning
 game.gd: drain_rate(), BATTERY_GAIN. spark.gd: DAMAGE. battery.tscn: LifeTimer wait_time. main.gd: MAX_SPARKS.
+##ai wrote this woohooo
