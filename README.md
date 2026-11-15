@@ -22,4 +22,7 @@ spark.gd, platform_body.gd, background.gd, hud.gd, sheet_frames.gd (builds anima
 
 ## Tuning
 game.gd: drain_rate(), BATTERY_GAIN. spark.gd: DAMAGE. battery.tscn: LifeTimer wait_time. main.gd: MAX_SPARKS.
-##ai wrote this woohooo
+
+## Audio
+https://tuna.voicemod.net/sound/4e400a27-543c-4b1b-8602-7f75fcdf0b98  by @lillemiamor
+## ai wrote this woohooo
